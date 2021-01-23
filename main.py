@@ -3,6 +3,9 @@ import os
 
 dictionary=PyDictionary()
 
+verde = '\033[1;32m'
+reset = '\033[0;0m'
+bullet = '\u2022 '
 
 def cls():
     if os.name == "nt":
@@ -16,10 +19,13 @@ def main():
     if word == "":
         print("Type a word.")
     else:
+        print(bullet+verde+"Meanings: "+reset)
         print (dictionary.meaning(word))
+        print(bullet+verde+"Synonyms: "+reset)
         print (dictionary.synonym(word))
+        print(bullet+verde+"Antonyms: "+reset)
         print (dictionary.antonym(word))
-    voltar = input("Want to restart? y/n > ")
+    voltar = input(bullet+verde+"Want to restart? y/n > ")
     if voltar == "y":
         main()
     else:
