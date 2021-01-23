@@ -1,3 +1,4 @@
+#Made by pepes
 from PyDictionary import PyDictionary
 import os
 
@@ -5,6 +6,7 @@ dictionary=PyDictionary()
 
 verde = '\033[1;32m'
 reset = '\033[0;0m'
+vermelho = '\033[1;31m'
 bullet = '\u2022 '
 
 def cls():
@@ -15,9 +17,9 @@ def cls():
 
 def main():
     cls()
-    word = input("What word do you want to learn about? > ")
+    word = input(bullet+verde+"What word do you want to learn about? > ")
     if word == "":
-        print("Type a word.")
+        print(bullet+vermelho+"Type a word."+reset)
     else:
         print(bullet+verde+"Meanings: "+reset)
         print (dictionary.meaning(word))
