@@ -17,6 +17,14 @@ def cls():
 
 def main():
     cls()
+    arte_ascii = '''                                                                          
+██████  ██  ██████ ████████ ██  ██████  ███    ██  █████  ██████  ██    ██ 
+██   ██ ██ ██         ██    ██ ██    ██ ████   ██ ██   ██ ██   ██  ██  ██  
+██   ██ ██ ██         ██    ██ ██    ██ ██ ██  ██ ███████ ██████    ████   
+██   ██ ██ ██         ██    ██ ██    ██ ██  ██ ██ ██   ██ ██   ██    ██    
+██████  ██  ██████    ██    ██  ██████  ██   ████ ██   ██ ██   ██    ██                                                                                                                                                                                   
+'''
+    print(verde+arte_ascii)
     word = input(bullet+verde+"What word do you want to learn about? > ")
     if word == "":
         print(bullet+vermelho+"Type a word."+reset)
