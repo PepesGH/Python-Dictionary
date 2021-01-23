@@ -1,6 +1,6 @@
-#Made by pepes
 from PyDictionary import PyDictionary
 import os
+import time
 
 dictionary=PyDictionary()
 
@@ -30,6 +30,11 @@ def main():
     voltar = input(bullet+verde+"Want to restart? y/n > ")
     if voltar == "y":
         main()
+    elif voltar == "n":
+        print(bullet+verde+"Thanks for using my simple program!"
+                            " Credits to Pepes and PyDictionary")
+        time.sleep(5)
+        quit()
     else:
         quit()
 
